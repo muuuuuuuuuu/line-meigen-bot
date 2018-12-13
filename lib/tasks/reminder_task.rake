@@ -1,9 +1,16 @@
 namespace :reminder_task do
-  webhook_controller = WebhookController.new
-  webhook_controller.reminder
 
-  desc "1日一回の名言"
+  # desc "1日1回の名言"
+  # task :meigen do
+  #   a = ["努力", "勉強", "継続"]
+  #   puts a
+  #   努力
+  #   勉強
+  #   継続
+  # end
+  desc "1日1回の名言"
   task :meigen do
-    p response
+    webhook = WebhookController.new
+    puts webhook.meigendayo
   end
 end
