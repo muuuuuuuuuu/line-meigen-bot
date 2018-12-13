@@ -11,6 +11,5 @@ class WebhookController < ApplicationController
       config.channel_token = "<channel access token>"
     }
     response = client.push_message("<to>", message)
-      p response
    end
 end
