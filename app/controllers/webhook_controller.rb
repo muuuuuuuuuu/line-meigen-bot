@@ -55,7 +55,7 @@ def meigendayo
               config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
               config.channel_id = ENV["PUSH_TO_ID"]
            }
-  response = client.push_message(config.channel_id, message)
+  response = client.push_message(config['id'], message)
     p response
   end
 end
