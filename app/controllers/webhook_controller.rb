@@ -7,13 +7,10 @@ def meigendayo
             text: '名言'
            }
             client = Line::Bot::Client.new { |config|
-                                         # ↓ここと
-              config.channel_secret = "<channel secret>"
-                                          # ↓ここ
-              config.channel_token = "<channel access token>"
+              config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
+              config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
            }
-                                  # ↓ここがわかりません
-  response = client.push_message("<to>", message)
+  response = client.push_message(["user_id"], message)
     p response
   end
 end
