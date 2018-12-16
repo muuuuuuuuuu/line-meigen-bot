@@ -30,5 +30,5 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-#Ignore line secret token id
-.env
+# Ignore line secret token id
+/.env
