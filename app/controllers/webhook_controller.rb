@@ -12,6 +12,6 @@ def meigendayo
 
            }
   response = client.push_message(ENV["LINE_CHANNEL_ID"], message)
-    p response
+    
   end
 end
