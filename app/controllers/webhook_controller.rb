@@ -21,6 +21,6 @@ class WebhookController < ApplicationController
       "キャンプでいろいろと試すことは、
       ムダではありません。ムダなことを考えて,
       ムダなことをしないと、伸びません。"]
-     puts array.sample
+       array.sample
    end
 end
