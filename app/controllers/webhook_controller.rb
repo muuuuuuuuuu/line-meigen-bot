@@ -29,5 +29,8 @@ class WebhookController < ApplicationController
     #            "自分が全く予想しない球が来たときにどう対応するか。それが大事です。試合では打ちたい球は来ない。好きな球を待っていたのでは終わってしまいます。
     #             by イチロー"]
     #    array.sample
+
+    meigen = Post.pluck(:content)
+    meigen.sample
    end
 end
