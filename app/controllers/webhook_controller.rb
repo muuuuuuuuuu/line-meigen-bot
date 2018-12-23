@@ -4,19 +4,13 @@ class WebhookController < ApplicationController
   def show
     meigen = Post.pluck(:content, :image)
     meigen1 = meigen.sample
-    meigen1[0]
-  end
-
-  def humanimage
-    meigen = Post.pluck(:content, :image)
-    imagedesu = meigen.sample
-    imagedesu[1]
+    {"1" => meigen1[0], "2" => meigen1[1]}
   end
 
   def meigendayo
       message = {
                 "type": "text",
-                "text": show
+                "text": show["1"]
                }
 
                  client = Line::Bot::Client.new { |config|
@@ -29,8 +23,8 @@ class WebhookController < ApplicationController
   def image
     message = {
     "type": "image",
-    "originalContentUrl": humanimage,
-    "previewImageUrl": humanimage
+    "originalContentUrl": show["2"],
+    "previewImageUrl": show["2"]
 }
 
 
