@@ -11,7 +11,7 @@ Post.create(:content => 'しっかりと
 
 目標を語る資格はない。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => 'やってみて
 
 「ダメだ」とわかったことと
@@ -22,7 +22,7 @@ Post.create(:content => 'やってみて
 
 違います。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '壁というのは
 
 できる人にしかやってこない。
@@ -39,14 +39,14 @@ Post.create(:content => '壁というのは
 
 チャンスだと思っている。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '少しずつ
 
 前に進んでいるという感覚は
 
 人間としてすごく大事。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => 'キャンプでいろいろと
 
 試すことはムダではありません。
@@ -57,7 +57,7 @@ Post.create(:content => 'キャンプでいろいろと
 
 伸びません。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '苦しみを背負いながら
 
 毎日小さなことを
@@ -72,7 +72,7 @@ Post.create(:content => '苦しみを背負いながら
 
 勝負の世界の醍醐味だ。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '自分が
 
 全く予想しない球が
@@ -87,7 +87,7 @@ Post.create(:content => '自分が
 
 終わってしまいます。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '準備というのは
 
 言い訳の材料となり得るものを
@@ -100,7 +100,7 @@ Post.create(:content => '準備というのは
 
 こなしていく。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '結果が出ないとき
 
 どういう自分でいられるか。
@@ -109,12 +109,12 @@ Post.create(:content => '結果が出ないとき
 
 何かを生み出すきっかけをつくる。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '人に勝つという価値観では
 
 野球をやっていない。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '他人の記録を塗り替えるのは
 
 7割、8割の力でも可能だが
@@ -123,12 +123,12 @@ Post.create(:content => '他人の記録を塗り替えるのは
 
 10以上の力が必要だ。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '調子が悪い時こそ
 
 全力でプレーすることが大事。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
 Post.create(:content => '逆風は嫌いではなく
 
 ありがたい。
@@ -139,4 +139,4 @@ Post.create(:content => '逆風は嫌いではなく
 
 次のステップにいけないから。
 
-by イチロー')
+by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
