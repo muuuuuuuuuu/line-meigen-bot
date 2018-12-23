@@ -2,10 +2,26 @@ class WebhookController < ApplicationController
   require 'line/bot'
 
   def meigendayo
+      message = {
+                "type": "text",
+                "text": show
+               }
+
+                 client = Line::Bot::Client.new { |config|
+                   config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
+                   config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
+                }
+       response = client.push_message(ENV["LINE_USER_ID"], message)
+  end
+
+  def image
     message = {
-              "type": "text",
-              "text": show
-             }
+    "type": "image",
+    "originalContentUrl": humanimage,
+    "previewImageUrl": humanimage
+}
+
+
               client = Line::Bot::Client.new { |config|
                 config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
                 config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
@@ -13,23 +29,21 @@ class WebhookController < ApplicationController
     response = client.push_message(ENV["LINE_USER_ID"], message)
   end
 
-  def show
-    # array = ["壁というのはできる人にしかやってこない。超えられる可能性がある人にしかやってこない。だから、壁がある時はチャンスだと思っている。
-    #           by イチロー",
-    #
-    #           "少しずつ前に進んでいるという感覚は人間としてすごく大事。
-    #           by イチロー",
-    #
-    #           "キャンプでいろいろと試すことはムダではありません。ムダなことを考えてムダなことをしないと、伸びません。
-    #           by イチロー",
-    #
-    #           "苦しみを背負いながら毎日小さなことを積み重ねて記録を達成した。苦しいけれど同時にドキドキワクワクしながら挑戦することが勝負の世界の醍醐味だ。
-    #            by イチロー",
-    #
-    #            "自分が全く予想しない球が来たときにどう対応するか。それが大事です。試合では打ちたい球は来ない。好きな球を待っていたのでは終わってしまいます。
-    #             by イチロー"]
-    #    array.sample
+  def humanimage
+    ichiro = "https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg"
+    billgates = "https://upload.wikimedia.org/wikipedia/commons/1/19/Bill_Gates_June_2015.jpg"
+    zyobuz = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/1920px-Steve_Jobs_Headshot_2010-CROP.jpg"
+    matsu = "https://president.jp/mwimgs/9/e/220/img_9ee60330fa958b23756af44cb7f27cbd41134.jpg"
 
+    post = Post.find([1,2,3,4,5,6,7,8,9,10,11,12,13])
+    if show == post
+       ichiro
+    else
+       matsu
+    end
+  end
+
+  def show
     meigen = Post.pluck(:content)
     meigen.sample
    end
