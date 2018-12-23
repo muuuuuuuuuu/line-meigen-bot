@@ -5,13 +5,12 @@ class WebhookController < ApplicationController
     meigen = Post.pluck(:content, :image)
     meigen1 = meigen.sample
     meigen1[0]
-    def humanimage
-      meigen1[1]
-    end
   end
 
   def humanimage
-
+    meigen = Post.pluck(:content, :image)
+    imagedesu = meigen.sample
+    imagedesu[1]
   end
 
   def meigendayo
