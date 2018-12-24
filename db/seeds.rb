@@ -5,14 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Post.create(:content => 'しっかりと
+Post.create(:id => 1, :content => 'しっかりと
 
 準備もしていないのに
 
 目標を語る資格はない。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => 'やってみて
+Post.create(:id => 2, :content => 'やってみて
 
 「ダメだ」とわかったことと
 
@@ -23,7 +23,7 @@ Post.create(:content => 'やってみて
 違います。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '壁というのは
+Post.create(:id => 3, :content => '壁というのは
 
 できる人にしかやってこない。
 
@@ -40,14 +40,14 @@ Post.create(:content => '壁というのは
 チャンスだと思っている。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '少しずつ
+Post.create(:id => 4, :content => '少しずつ
 
 前に進んでいるという感覚は
 
 人間としてすごく大事。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => 'キャンプでいろいろと
+Post.create(:id => 5, :content => 'キャンプでいろいろと
 
 試すことはムダではありません。
 
@@ -58,7 +58,7 @@ Post.create(:content => 'キャンプでいろいろと
 伸びません。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '苦しみを背負いながら
+Post.create(:id => 6, :content => '苦しみを背負いながら
 
 毎日小さなことを
 
@@ -73,7 +73,7 @@ Post.create(:content => '苦しみを背負いながら
 勝負の世界の醍醐味だ。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '自分が
+Post.create(:id => 7, :content => '自分が
 
 全く予想しない球が
 
@@ -88,7 +88,7 @@ Post.create(:content => '自分が
 終わってしまいます。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '準備というのは
+Post.create(:id => 8, :content => '準備というのは
 
 言い訳の材料となり得るものを
 
@@ -101,7 +101,7 @@ Post.create(:content => '準備というのは
 こなしていく。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '結果が出ないとき
+Post.create(:id => 9, :content => '結果が出ないとき
 
 どういう自分でいられるか。
 
@@ -110,12 +110,12 @@ Post.create(:content => '結果が出ないとき
 何かを生み出すきっかけをつくる。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '人に勝つという価値観では
+Post.create(:id => 10, :content => '人に勝つという価値観では
 
 野球をやっていない。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '他人の記録を塗り替えるのは
+Post.create(:id => 11, :content => '他人の記録を塗り替えるのは
 
 7割、8割の力でも可能だが
 
@@ -124,12 +124,12 @@ Post.create(:content => '他人の記録を塗り替えるのは
 10以上の力が必要だ。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '調子が悪い時こそ
+Post.create(:id => 12, :content => '調子が悪い時こそ
 
 全力でプレーすることが大事。
 
 by イチロー', :image => 'https://trend-comment.com/wp-content/uploads/2013/08/A5A4A5C1A5EDA1BCA3B2.jpg')
-Post.create(:content => '逆風は嫌いではなく
+Post.create(:id => 13, :content => '逆風は嫌いではなく
 
 ありがたい。
 
