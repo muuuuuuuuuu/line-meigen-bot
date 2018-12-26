@@ -2,9 +2,13 @@ class WebhookController < ApplicationController
   require 'line/bot'
 
   def show
+    number = (1..50).to_a
+    number2 = number.sample
     meigen = Post.pluck(:content, :image)
-    meigen1 = meigen.sample
-    {"1" => meigen1[0], "2" => meigen1[1]}
+    # mei1 = mei.sample
+    # meigen1 = meigen.assoc(mei1)
+    meigen2 = meigen[number2]
+    {"1" => meigen2[0], "2" => meigen2[1]}
   end
 
   def meigendayo
