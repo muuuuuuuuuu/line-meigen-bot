@@ -4,6 +4,5 @@ namespace :reminder_task do
   task :meigen => :environment do
     webhook = WebhookController.new
     puts webhook.meigendayo
-    # puts webhook.image
   end
 end
