@@ -16,13 +16,11 @@ class WebhookController < ApplicationController
             "type": "image",
             "originalContentUrl": hash["2"],
             "previewImageUrl": hash["2"]
-           }
-
-
-     client = Line::Bot::Client.new { |config|
-       config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
-       config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
-      }
-     response = client.push_message(ENV["LINE_USER_ID"], message)
+    }
+    client = Line::Bot::Client.new { |config|
+      config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
+      config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
+    }
+    response = client.push_message(ENV["LINE_USER_ID"], message)
   end
 end
